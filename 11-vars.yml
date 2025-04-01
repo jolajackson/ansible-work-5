@@ -3,7 +3,7 @@
   hosts: g1
   become: yes
   vars:
-    myusername: Cyndodo
+    myusername: jolajackson
 
   tasks:
   - name: Update Dynamic page
