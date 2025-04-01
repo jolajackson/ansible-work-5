@@ -11,7 +11,7 @@
         state: directory
 
 - name: Create directory
-      file:
+  file:
         path: /home/fedora/opt/devops_dir_1
         state: directory
 
