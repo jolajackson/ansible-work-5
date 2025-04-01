@@ -1,4 +1,4 @@
-# ansible n1 -m file -a "path=/home/fedora/opt/n1_dir state=directory"
+# ansible n1 -m file -a "path=/home/fedora/n1_dir state=directory"
 ---
 - name: Update n1 servers
   hosts: n1
@@ -7,12 +7,12 @@
   tasks:
     - name: Create directory
       file:
-        path: /home/fedora/opt/devops_dir
+        path: /opt/devops_dir
         state: directory
 
 - name: Create directory
   file:
-        path: /home/fedora/opt/devops_dir_1
+        path: /home/fedora/devops_dir_1
         state: directory
 
 - name: Update n2 servers
@@ -22,12 +22,12 @@
   tasks:
     - name: Create directory
       file:
-        path: /home/fedora/opt/devops_dir_1
+        path: /opt/devops_dir_1
         state: directory
 
     - name: Create directory
       file:
-        path: /home/fedora/opt/devops_dir_2
+        path: /home/fedora/devops_dir_2
         state: directory
 
 - name: Update group1 servers
@@ -37,10 +37,10 @@
   tasks:
     - name: Create directory
       file:
-        path: /home/fedora/opt/devops_dir_group1
+        path: /opt/devops_dir_group1
         state: directory
 
     - name: Create directory
       file:
-        path: /home/fedora/opt/devops_dir_group2
+        path: /home/fedora/devops_dir_group2
         state: directory   ...
