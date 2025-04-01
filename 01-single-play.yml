@@ -1,6 +1,7 @@
+# ansible n1 -m file -a "path=/home/fedora/opt/n1_dir state=directory"
 ---
-- name: Update all servers
-  hosts: all
+- name: Update n1 servers
+  hosts: n1
   become: yes  # Ensures the playbook runs with sudo privileges
 
   tasks:
