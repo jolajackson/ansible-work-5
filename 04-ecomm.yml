@@ -9,7 +9,7 @@
         name: git
         state: present
 
-- name: Host code
+    - name: Host code
   git:
         repo: https://github.com/jolajackson/ansible-work-5.git
         dest: /var/www/html
