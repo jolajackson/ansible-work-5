@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps Portfolio - Omojuolalo Jackson</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #333333;
+      --card-bg: #f7fafc;
+      --header-bg: #20232a;
+      --accent: #2f855a;
+      --link: #3182ce;
+    }
+
+    body.dark {
+      --bg: #1a202c;
+      --text: #e2e8f0;
+      --card-bg: #2d3748;
+      --header-bg: #111827;
+      --accent: #68d391;
+      --link: #63b3ed;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--header-bg);
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 2em;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .toggle-dark {
+      cursor: pointer;
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: var(--header-bg);
+      color: white;
+    }
+
+    .profile-pic {
+      width: 150px;
+      border-radius: 50%;
+      border: 4px solid var(--accent);
+      margin: 20px auto;
+      display: block;
+    }
+
+    .typed-text {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .summary {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: var(--card-bg);
+      border-left: 5px solid var(--accent);
+      border-radius: 8px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: var(--bg);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      color: var(--accent);
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background-color: var(--card-bg);
+      margin: 8px 0;
+      padding: 10px;
+      border-left: 5px solid var(--accent);
+      border-radius: 5px;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: var(--accent);
+    }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>OMOJUOLALO JACKSON</h1>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="toggle-dark" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+  </div>
+
+  <div class="header">
+    <img src="c:\\Users\\jacks\\Downloads\\image5.jpeg" alt="Omojuolalo Jackson" class="profile-pic" />
+    <div class="typed-text" id="typed"></div>
+    <div class="summary">
+      <p><strong>Professional Summary:</strong> Passionate and detail-oriented DevOps engineer with 3+ years of experience building robust CI/CD pipelines, automating infrastructure with IaC tools, and optimizing cloud resources across AWS, Azure, and GCP. Committed to delivering scalable and secure systems that enable high-velocity software delivery.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 id="about">About Me</h2>
+    <p>I enjoy solving infrastructure challenges, automating environments, and empowering teams to deploy faster using DevOps best practices.</p>
+
+    <h2 id="skills">Skills</h2>
+    <ul>
+      <li>Docker & Kubernetes</li>
+      <li>AWS, Azure, GCP</li>
+      <li>Terraform & CloudFormation</li>
+      <li>CI/CD with Jenkins & GitHub Actions</li>
+      <li>Monitoring: Prometheus, Grafana</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Certified Solutions Architect</li>
+      <li>Linux Essentials</li>
+    </ul>
+
+    <h2 id="projects">Projects</h2>
+
+    <div class="project-card" data-aos="fade-up">
+      <h3>CI/CD Pipeline</h3>
+      <p>Automated Dockerized app deployments using Jenkins and GitHub Webhooks.</p>
+    </div>
+
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>K8s Deployment</h3>
+      <p>Hosted scalable web apps on Kubernetes with Helm for version control and rollbacks.</p>
+    </div>
+
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Infrastructure as Code</h3>
+      <p>Created reusable Terraform modules and deployed infrastructure on AWS using IaC.</p>
+    </div>
+
+    <h2 id="contact">Contact</h2>
+    <p>Email: juolalojackson@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/omojuolalo-jackson" target="_blank">linkedin.com/in/omojuolalo-jackson</a></p>
+  </div>
+
+  <div class="footer">
+    © 2025 Omojuolalo Jackson. All rights reserved.
+  </div>
+
+  <button class="scroll-top" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    AOS.init();
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+
+    const typed = new Typed("#typed", {
+      strings: ["DevOps Engineer", "Cloud Enthusiast", "CI/CD Specialist", "Automation Expert"],
+      typeSpeed: 60,
+      backSpeed: 30,
+      backDelay: 1000,
+      loop: true
+    });
+
+    const scrollBtn = document.querySelector(".scroll-top");
+    window.addEventListener("scroll", () => {
+      scrollBtn.style.display = window.scrollY > 200 ? "block" : "none";
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
